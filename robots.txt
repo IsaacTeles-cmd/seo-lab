@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://IsaacTeles-cmd.github.io/seo-lab/sitemap.xml
