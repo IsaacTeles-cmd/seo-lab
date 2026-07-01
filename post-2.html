@@ -1,107 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="j3n9p_rNJ2JUV6eii2PbiMdsbD_wMvGUTxcxkC35BM4" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="j3n9p_rNJ2JUV6eii2PbiMdsbD_wMvGUTxcxkC35BM4"
+    />
 
-  <!-- SEO BÁSICO -->
-  <title>APIs REST com FastAPI: Estrutura, Boas Práticas e Deploy – DevLog</title>
-  <meta name="description" content="Guia completo sobre como construir uma API REST com FastAPI, autenticação JWT, PostgreSQL, Alembic e deploy com Docker. Do zero ao ambiente de produção." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://IsaacTeles-cmd.github.io/seo-lab/post-2.html" />
+    <!-- SEO BÁSICO -->
+    <title>
+      APIs REST com FastAPI: Estrutura, Boas Práticas e Deploy – DevLog
+    </title>
+    <meta
+      name="description"
+      content="Guia completo sobre como construir uma API REST com FastAPI, autenticação JWT, PostgreSQL, Alembic e deploy com Docker. Do zero ao ambiente de produção."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://isaacteles-cmd-cmd.github.io/seo-lab/post-2.html"
+    />
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="APIs REST com FastAPI: Estrutura, Boas Práticas e Deploy" />
-  <meta property="og:description" content="Guia completo: FastAPI + JWT + PostgreSQL + Docker. Do zero ao ambiente de produção." />
-  <meta property="og:url" content="https://IsaacTeles-cmd.github.io/seo-lab/post-2.html" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="article:published_time" content="2025-05-28" />
-  <meta property="article:author" content="DevLog" />
-  <meta property="article:tag" content="Python" />
-  <meta property="article:tag" content="FastAPI" />
-  <meta property="article:tag" content="Back-end" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="APIs REST com FastAPI: Estrutura, Boas Práticas e Deploy"
+    />
+    <meta
+      property="og:description"
+      content="Guia completo: FastAPI + JWT + PostgreSQL + Docker. Do zero ao ambiente de produção."
+    />
+    <meta
+      property="og:url"
+      content="https://isaacteles-cmd-cmd.github.io/seo-lab/post-2.html"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="article:published_time" content="2025-05-28" />
+    <meta property="article:author" content="DevLog" />
+    <meta property="article:tag" content="Python" />
+    <meta property="article:tag" content="FastAPI" />
+    <meta property="article:tag" content="Back-end" />
 
-  <!-- SCHEMA.ORG – BlogPosting -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "APIs REST com FastAPI: estrutura, boas práticas e deploy",
-    "description": "Guia completo sobre como construir uma API REST com FastAPI, JWT, PostgreSQL, Alembic e deploy com Docker.",
-    "url": "https://IsaacTeles-cmd.github.io/seo-lab/post-2.html",
-    "datePublished": "2025-05-28",
-    "dateModified": "2025-05-28",
-    "inLanguage": "pt-BR",
-    "author": {
-      "@type": "Person",
-      "name": "DevLog"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "DevLog",
-      "url": "https://IsaacTeles-cmd.github.io/seo-lab/"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://IsaacTeles-cmd.github.io/seo-lab/post-2.html"
-    },
-    "keywords": ["FastAPI", "Python", "API REST", "JWT", "PostgreSQL", "Docker", "back-end"]
-  }
-  </script>
+    <!-- SCHEMA.ORG – BlogPosting -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "APIs REST com FastAPI: estrutura, boas práticas e deploy",
+        "description": "Guia completo sobre como construir uma API REST com FastAPI, JWT, PostgreSQL, Alembic e deploy com Docker.",
+        "url": "https://isaacteles-cmd-cmd.github.io/seo-lab/post-2.html",
+        "datePublished": "2025-05-28",
+        "dateModified": "2025-05-28",
+        "inLanguage": "pt-BR",
+        "author": {
+          "@type": "Person",
+          "name": "DevLog"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DevLog",
+          "url": "https://isaacteles-cmd-cmd.github.io/seo-lab/"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://isaacteles-cmd-cmd.github.io/seo-lab/post-2.html"
+        },
+        "keywords": [
+          "FastAPI",
+          "Python",
+          "API REST",
+          "JWT",
+          "PostgreSQL",
+          "Docker",
+          "back-end"
+        ]
+      }
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-  <nav>
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">dev<span>log</span>.io</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <div class="container">
-
-      <header class="article-header">
-        <p class="hero-eyebrow">Back-end · Python</p>
-        <h1>APIs REST com FastAPI: estrutura, boas práticas e deploy</h1>
-        <div class="article-meta">
-          <span>28 de Maio de 2025</span>
-          <span>6 min de leitura</span>
-          <span>DevLog</span>
-        </div>
-      </header>
-
-      <article class="article-body">
-
-        <p>FastAPI se tornou um dos frameworks Python mais populares para APIs por razões sólidas: performance próxima ao Node.js, documentação automática via OpenAPI, tipagem nativa e suporte a operações assíncronas. Neste artigo vou mostrar como estruturar um projeto de verdade — não só o "Hello World" da documentação.</p>
-
-        <h2>Por que FastAPI?</h2>
-
-        <p>Comparando com Flask e Django REST Framework, o FastAPI entrega alguns diferenciais importantes para projetos modernos:</p>
-
-        <ul>
-          <li>Validação automática de dados com Pydantic v2</li>
-          <li>Suporte nativo a <code>async/await</code> com SQLAlchemy assíncrono</li>
-          <li>Documentação Swagger gerada automaticamente em <code>/docs</code></li>
-          <li>Type hints que funcionam tanto para a IDE quanto para o runtime</li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">dev<span>log</span>.io</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
         </ul>
+      </div>
+    </nav>
 
-        <h2>Estrutura de projeto recomendada</h2>
+    <main>
+      <div class="container">
+        <header class="article-header">
+          <p class="hero-eyebrow">Back-end · Python</p>
+          <h1>APIs REST com FastAPI: estrutura, boas práticas e deploy</h1>
+          <div class="article-meta">
+            <span>28 de Maio de 2025</span>
+            <span>6 min de leitura</span>
+            <span>DevLog</span>
+          </div>
+        </header>
 
-        <p>Evite colocar tudo em um único <code>main.py</code>. Uma estrutura bem organizada facilita testes, manutenção e onboarding de outras pessoas:</p>
+        <article class="article-body">
+          <p>
+            FastAPI se tornou um dos frameworks Python mais populares para APIs
+            por razões sólidas: performance próxima ao Node.js, documentação
+            automática via OpenAPI, tipagem nativa e suporte a operações
+            assíncronas. Neste artigo vou mostrar como estruturar um projeto de
+            verdade — não só o "Hello World" da documentação.
+          </p>
 
-        <pre><code>projeto/
+          <h2>Por que FastAPI?</h2>
+
+          <p>
+            Comparando com Flask e Django REST Framework, o FastAPI entrega
+            alguns diferenciais importantes para projetos modernos:
+          </p>
+
+          <ul>
+            <li>Validação automática de dados com Pydantic v2</li>
+            <li>
+              Suporte nativo a <code>async/await</code> com SQLAlchemy
+              assíncrono
+            </li>
+            <li>
+              Documentação Swagger gerada automaticamente em <code>/docs</code>
+            </li>
+            <li>
+              Type hints que funcionam tanto para a IDE quanto para o runtime
+            </li>
+          </ul>
+
+          <h2>Estrutura de projeto recomendada</h2>
+
+          <p>
+            Evite colocar tudo em um único <code>main.py</code>. Uma estrutura
+            bem organizada facilita testes, manutenção e onboarding de outras
+            pessoas:
+          </p>
+
+          <pre><code>projeto/
 ├── app/
 │   ├── api/
 │   │   └── v1/
@@ -124,16 +172,27 @@
 ├── Dockerfile
 └── docker-compose.yml</code></pre>
 
-        <h2>Autenticação JWT do jeito certo</h2>
+          <h2>Autenticação JWT do jeito certo</h2>
 
-        <p>Muitos tutoriais mostram JWT mas esquecem do <strong>refresh token</strong>. Em produção, usar apenas access token de longa duração é um risco de segurança. A abordagem correta separa dois tokens:</p>
+          <p>
+            Muitos tutoriais mostram JWT mas esquecem do
+            <strong>refresh token</strong>. Em produção, usar apenas access
+            token de longa duração é um risco de segurança. A abordagem correta
+            separa dois tokens:
+          </p>
 
-        <ul>
-          <li><strong>Access token:</strong> curta duração (15–30 min), enviado no header de cada requisição</li>
-          <li><strong>Refresh token:</strong> longa duração (7–30 dias), usado apenas para gerar novos access tokens</li>
-        </ul>
+          <ul>
+            <li>
+              <strong>Access token:</strong> curta duração (15–30 min), enviado
+              no header de cada requisição
+            </li>
+            <li>
+              <strong>Refresh token:</strong> longa duração (7–30 dias), usado
+              apenas para gerar novos access tokens
+            </li>
+          </ul>
 
-        <pre><code># core/security.py
+          <pre><code># core/security.py
 from datetime import datetime, timedelta
 import bcrypt
 import jwt
@@ -152,13 +211,21 @@ def hash_password(password: str) -> str:
 def verify_password(plain: str, hashed: str) -> bool:
     return bcrypt.checkpw(plain.encode(), hashed.encode())</code></pre>
 
-        <blockquote>Nota: se você estiver no Python 3.13+, use <code>bcrypt</code> diretamente em vez de <code>passlib</code> — há incompatibilidades conhecidas com versões recentes.</blockquote>
+          <blockquote>
+            Nota: se você estiver no Python 3.13+, use
+            <code>bcrypt</code> diretamente em vez de <code>passlib</code> — há
+            incompatibilidades conhecidas com versões recentes.
+          </blockquote>
 
-        <h2>Banco de dados com SQLAlchemy assíncrono</h2>
+          <h2>Banco de dados com SQLAlchemy assíncrono</h2>
 
-        <p>Para produção, o SQLAlchemy com operações assíncronas é o caminho. Ele permite que o servidor processe outras requisições enquanto aguarda o banco, o que aumenta significativamente o throughput:</p>
+          <p>
+            Para produção, o SQLAlchemy com operações assíncronas é o caminho.
+            Ele permite que o servidor processe outras requisições enquanto
+            aguarda o banco, o que aumenta significativamente o throughput:
+          </p>
 
-        <pre><code># db/session.py
+          <pre><code># db/session.py
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 
@@ -171,11 +238,11 @@ async def get_db():
     async with AsyncSessionLocal() as session:
         yield session</code></pre>
 
-        <h2>Deploy com Docker</h2>
+          <h2>Deploy com Docker</h2>
 
-        <p>Um <code>Dockerfile</code> mínimo e funcional para FastAPI:</p>
+          <p>Um <code>Dockerfile</code> mínimo e funcional para FastAPI:</p>
 
-        <pre><code>FROM python:3.12-slim
+          <pre><code>FROM python:3.12-slim
 
 WORKDIR /app
 COPY requirements.txt .
@@ -186,13 +253,21 @@ EXPOSE 8000
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</code></pre>
 
-        <p>Para deploy gratuito, o <strong>Render</strong> aceita imagens Docker direto do GitHub. É exatamente como o projeto de portfólio referenciado na home deste blog foi publicado.</p>
+          <p>
+            Para deploy gratuito, o <strong>Render</strong> aceita imagens
+            Docker direto do GitHub. É exatamente como o projeto de portfólio
+            referenciado na home deste blog foi publicado.
+          </p>
 
-        <h2>Testes com pytest</h2>
+          <h2>Testes com pytest</h2>
 
-        <p>Cobertura de testes é o que separa um projeto de portfólio de um projeto de produção. Use o <code>TestClient</code> do FastAPI junto com banco de dados em memória para testes rápidos:</p>
+          <p>
+            Cobertura de testes é o que separa um projeto de portfólio de um
+            projeto de produção. Use o <code>TestClient</code> do FastAPI junto
+            com banco de dados em memória para testes rápidos:
+          </p>
 
-        <pre><code># tests/test_auth.py
+          <pre><code># tests/test_auth.py
 from fastapi.testclient import TestClient
 from app.main import app
 
@@ -206,30 +281,42 @@ def test_register_user():
     assert response.status_code == 201
     assert "id" in response.json()</code></pre>
 
-        <h2>Conclusão</h2>
+          <h2>Conclusão</h2>
 
-        <p>FastAPI com a estrutura certa, JWT com refresh token, SQLAlchemy assíncrono e Docker resulta em uma API que tem cara de projeto profissional — não de tutorial. Esse combo é exatamente o que recrutadores de back-end Python esperam ver em um portfólio sólido.</p>
+          <p>
+            FastAPI com a estrutura certa, JWT com refresh token, SQLAlchemy
+            assíncrono e Docker resulta em uma API que tem cara de projeto
+            profissional — não de tutorial. Esse combo é exatamente o que
+            recrutadores de back-end Python esperam ver em um portfólio sólido.
+          </p>
 
-        <div class="read-more">
-          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:1rem;">Continue lendo</p>
-          <a href="post-1.html" class="btn btn-ghost">← Rastreamento e indexação no Google</a>
-        </div>
-
-      </article>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 DevLog</span>
-      <div class="footer-links">
-        <a href="blog.html">Blog</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="sitemap.xml">Sitemap</a>
+          <div class="read-more">
+            <p
+              style="
+                color: var(--muted);
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+              "
+            >
+              Continue lendo
+            </p>
+            <a href="post-1.html" class="btn btn-ghost"
+              >← Rastreamento e indexação no Google</a
+            >
+          </div>
+        </article>
       </div>
-    </div>
-  </footer>
+    </main>
 
-</body>
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 DevLog</span>
+        <div class="footer-links">
+          <a href="blog.html">Blog</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

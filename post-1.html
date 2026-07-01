@@ -1,111 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="j3n9p_rNJ2JUV6eii2PbiMdsbD_wMvGUTxcxkC35BM4" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="j3n9p_rNJ2JUV6eii2PbiMdsbD_wMvGUTxcxkC35BM4"
+    />
 
-  <!-- SEO BÁSICO -->
-  <title>Como o Google Rastreia e Indexa Páginas: Guia para Devs – DevLog</title>
-  <meta name="description" content="Entenda como o Googlebot funciona, o ciclo de rastreamento e indexação, e o que você pode controlar via robots.txt, sitemap e meta tags para melhorar seu SEO técnico." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://IsaacTeles-cmd.github.io/seo-lab/post-1.html" />
+    <!-- SEO BÁSICO -->
+    <title>
+      Como o Google Rastreia e Indexa Páginas: Guia para Devs – DevLog
+    </title>
+    <meta
+      name="description"
+      content="Entenda como o Googlebot funciona, o ciclo de rastreamento e indexação, e o que você pode controlar via robots.txt, sitemap e meta tags para melhorar seu SEO técnico."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://isaacteles-cmd-cmd.github.io/seo-lab/post-1.html"
+    />
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Como o Google Rastreia e Indexa Páginas: Guia para Devs" />
-  <meta property="og:description" content="Entenda como o Googlebot funciona e o que você pode controlar no seu código para aparecer bem no Google." />
-  <meta property="og:url" content="https://IsaacTeles-cmd.github.io/seo-lab/post-1.html" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="article:published_time" content="2025-06-12" />
-  <meta property="article:author" content="DevLog" />
-  <meta property="article:tag" content="SEO Técnico" />
-  <meta property="article:tag" content="Google Search Console" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Como o Google Rastreia e Indexa Páginas: Guia para Devs"
+    />
+    <meta
+      property="og:description"
+      content="Entenda como o Googlebot funciona e o que você pode controlar no seu código para aparecer bem no Google."
+    />
+    <meta
+      property="og:url"
+      content="https://isaacteles-cmd-cmd.github.io/seo-lab/post-1.html"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="article:published_time" content="2025-06-12" />
+    <meta property="article:author" content="DevLog" />
+    <meta property="article:tag" content="SEO Técnico" />
+    <meta property="article:tag" content="Google Search Console" />
 
-  <!-- SCHEMA.ORG – BlogPosting -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Como o Google Rastreia e Indexa Páginas: um guia prático para devs",
-    "description": "Entenda o ciclo completo de rastreamento, indexação e ranqueamento do Google e o que você pode controlar no seu código.",
-    "url": "https://IsaacTeles-cmd.github.io/seo-lab/post-1.html",
-    "datePublished": "2025-06-12",
-    "dateModified": "2025-06-12",
-    "inLanguage": "pt-BR",
-    "author": {
-      "@type": "Person",
-      "name": "DevLog"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "DevLog",
-      "url": "https://IsaacTeles-cmd.github.io/seo-lab/"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://IsaacTeles-cmd.github.io/seo-lab/post-1.html"
-    },
-    "keywords": ["SEO técnico", "Google Search Console", "rastreamento", "indexação", "Googlebot", "robots.txt", "sitemap"]
-  }
-  </script>
+    <!-- SCHEMA.ORG – BlogPosting -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Como o Google Rastreia e Indexa Páginas: um guia prático para devs",
+        "description": "Entenda o ciclo completo de rastreamento, indexação e ranqueamento do Google e o que você pode controlar no seu código.",
+        "url": "https://isaacteles-cmd-cmd.github.io/seo-lab/post-1.html",
+        "datePublished": "2025-06-12",
+        "dateModified": "2025-06-12",
+        "inLanguage": "pt-BR",
+        "author": {
+          "@type": "Person",
+          "name": "DevLog"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DevLog",
+          "url": "https://isaacteles-cmd-cmd.github.io/seo-lab/"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://isaacteles-cmd-cmd.github.io/seo-lab/post-1.html"
+        },
+        "keywords": [
+          "SEO técnico",
+          "Google Search Console",
+          "rastreamento",
+          "indexação",
+          "Googlebot",
+          "robots.txt",
+          "sitemap"
+        ]
+      }
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">dev<span>log</span>.io</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav>
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">dev<span>log</span>.io</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-      </ul>
-    </div>
-  </nav>
+    <main>
+      <div class="container">
+        <header class="article-header">
+          <p class="hero-eyebrow">SEO Técnico</p>
+          <h1>
+            Como o Google rastreia e indexa páginas: um guia prático para devs
+          </h1>
+          <div class="article-meta">
+            <span>12 de Junho de 2025</span>
+            <span>8 min de leitura</span>
+            <span>DevLog</span>
+          </div>
+        </header>
 
-  <main>
-    <div class="container">
+        <article class="article-body">
+          <p>
+            Se você já publicou um site e ficou esperando aparecer no Google sem
+            entender muito bem o que estava acontecendo, este artigo é pra você.
+            Vamos destrinchar o processo completo que o Google usa para
+            descobrir, ler e rankear páginas — com foco no que você, como
+            desenvolvedor, pode controlar diretamente no código.
+          </p>
 
-      <header class="article-header">
-        <p class="hero-eyebrow">SEO Técnico</p>
-        <h1>Como o Google rastreia e indexa páginas: um guia prático para devs</h1>
-        <div class="article-meta">
-          <span>12 de Junho de 2025</span>
-          <span>8 min de leitura</span>
-          <span>DevLog</span>
-        </div>
-      </header>
+          <h2>O ciclo completo: Rastreamento → Indexação → Ranqueamento</h2>
 
-      <article class="article-body">
+          <p>
+            O processo do Google tem três etapas distintas que muita gente
+            confunde. Entender cada uma é fundamental para diagnosticar
+            problemas no Search Console:
+          </p>
 
-        <p>Se você já publicou um site e ficou esperando aparecer no Google sem entender muito bem o que estava acontecendo, este artigo é pra você. Vamos destrinchar o processo completo que o Google usa para descobrir, ler e rankear páginas — com foco no que você, como desenvolvedor, pode controlar diretamente no código.</p>
+          <h3>1. Rastreamento (Crawling)</h3>
+          <p>
+            O Googlebot é um robô que navega pela web seguindo links. Quando ele
+            encontra uma URL nova (via link de outro site, sitemap, ou
+            requisição manual), coloca na fila de rastreamento. O Google não
+            rastreia tudo de uma vez — ele decide a frequência com base em
+            popularidade, velocidade do servidor e orçamento de rastreamento
+            (<strong>crawl budget</strong>).
+          </p>
 
-        <h2>O ciclo completo: Rastreamento → Indexação → Ranqueamento</h2>
+          <h3>2. Indexação (Indexing)</h3>
+          <p>
+            Depois de rastrear, o Google processa o conteúdo da página:
+            renderiza o JavaScript, analisa o HTML, extrai texto, links e
+            metadados. Se a página passar pelos critérios de qualidade, ela
+            entra no índice — o banco de dados gigante que alimenta os
+            resultados de busca.
+          </p>
 
-        <p>O processo do Google tem três etapas distintas que muita gente confunde. Entender cada uma é fundamental para diagnosticar problemas no Search Console:</p>
+          <h3>3. Ranqueamento (Ranking)</h3>
+          <p>
+            Páginas indexadas competem por posição quando alguém faz uma busca.
+            O ranqueamento envolve centenas de fatores: relevância do conteúdo,
+            autoridade do domínio, velocidade, experiência do usuário (Core Web
+            Vitals), e muito mais.
+          </p>
 
-        <h3>1. Rastreamento (Crawling)</h3>
-        <p>O Googlebot é um robô que navega pela web seguindo links. Quando ele encontra uma URL nova (via link de outro site, sitemap, ou requisição manual), coloca na fila de rastreamento. O Google não rastreia tudo de uma vez — ele decide a frequência com base em popularidade, velocidade do servidor e orçamento de rastreamento (<strong>crawl budget</strong>).</p>
+          <blockquote>
+            Uma página pode ser rastreada mas não indexada. Pode ser indexada
+            mas ranquear mal. Entender onde está o problema é o trabalho do SEO
+            técnico.
+          </blockquote>
 
-        <h3>2. Indexação (Indexing)</h3>
-        <p>Depois de rastrear, o Google processa o conteúdo da página: renderiza o JavaScript, analisa o HTML, extrai texto, links e metadados. Se a página passar pelos critérios de qualidade, ela entra no índice — o banco de dados gigante que alimenta os resultados de busca.</p>
+          <h2>O que você controla: as alavancas técnicas</h2>
 
-        <h3>3. Ranqueamento (Ranking)</h3>
-        <p>Páginas indexadas competem por posição quando alguém faz uma busca. O ranqueamento envolve centenas de fatores: relevância do conteúdo, autoridade do domínio, velocidade, experiência do usuário (Core Web Vitals), e muito mais.</p>
+          <h3>robots.txt</h3>
+          <p>
+            O arquivo <code>robots.txt</code> fica na raiz do site e instrui os
+            robôs sobre quais URLs eles podem ou não rastrear. É uma orientação
+            — robôs maliciosos ignoram, mas o Googlebot respeita.
+          </p>
 
-        <blockquote>Uma página pode ser rastreada mas não indexada. Pode ser indexada mas ranquear mal. Entender onde está o problema é o trabalho do SEO técnico.</blockquote>
-
-        <h2>O que você controla: as alavancas técnicas</h2>
-
-        <h3>robots.txt</h3>
-        <p>O arquivo <code>robots.txt</code> fica na raiz do site e instrui os robôs sobre quais URLs eles podem ou não rastrear. É uma orientação — robôs maliciosos ignoram, mas o Googlebot respeita.</p>
-
-        <pre><code># Exemplo de robots.txt
+          <pre><code># Exemplo de robots.txt
 User-agent: *
 Allow: /
 
@@ -113,14 +179,21 @@ User-agent: Googlebot
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://IsaacTeles-cmd.github.io/seo-lab/sitemap.xml</code></pre>
+Sitemap: https://isaacteles-cmd-cmd.github.io/seo-lab/sitemap.xml</code></pre>
 
-        <p><strong>Atenção:</strong> bloquear uma URL no robots.txt impede o rastreamento, mas não a indexação. Se outros sites linkam para ela, o Google pode indexar a URL sem nem ter lido o conteúdo.</p>
+          <p>
+            <strong>Atenção:</strong> bloquear uma URL no robots.txt impede o
+            rastreamento, mas não a indexação. Se outros sites linkam para ela,
+            o Google pode indexar a URL sem nem ter lido o conteúdo.
+          </p>
 
-        <h3>Meta Robots</h3>
-        <p>A tag <code>&lt;meta name="robots"&gt;</code> no <code>&lt;head&gt;</code> controla a indexação página por página:</p>
+          <h3>Meta Robots</h3>
+          <p>
+            A tag <code>&lt;meta name="robots"&gt;</code> no
+            <code>&lt;head&gt;</code> controla a indexação página por página:
+          </p>
 
-        <pre><code>&lt;!-- Indexar e seguir links (padrão) --&gt;
+          <pre><code>&lt;!-- Indexar e seguir links (padrão) --&gt;
 &lt;meta name="robots" content="index, follow" /&gt;
 
 &lt;!-- Não indexar esta página --&gt;
@@ -129,52 +202,96 @@ Sitemap: https://IsaacTeles-cmd.github.io/seo-lab/sitemap.xml</code></pre>
 &lt;!-- Indexar mas não seguir os links --&gt;
 &lt;meta name="robots" content="index, nofollow" /&gt;</code></pre>
 
-        <h3>Sitemap XML</h3>
-        <p>O sitemap é um arquivo que lista todas as URLs do seu site. Ele não garante indexação, mas ajuda o Googlebot a descobrir páginas mais rápido, especialmente em sites novos com poucos links externos.</p>
+          <h3>Sitemap XML</h3>
+          <p>
+            O sitemap é um arquivo que lista todas as URLs do seu site. Ele não
+            garante indexação, mas ajuda o Googlebot a descobrir páginas mais
+            rápido, especialmente em sites novos com poucos links externos.
+          </p>
 
-        <h3>Tag Canonical</h3>
-        <p>Se o mesmo conteúdo existe em múltiplas URLs (ex: com e sem <code>/</code> no final, versões <code>http</code> vs <code>https</code>), a tag canonical diz ao Google qual é a versão oficial:</p>
+          <h3>Tag Canonical</h3>
+          <p>
+            Se o mesmo conteúdo existe em múltiplas URLs (ex: com e sem
+            <code>/</code> no final, versões <code>http</code> vs
+            <code>https</code>), a tag canonical diz ao Google qual é a versão
+            oficial:
+          </p>
 
-        <pre><code>&lt;link rel="canonical" href="https://IsaacTeles-cmd.github.io/seo-lab/post-1.html" /&gt;</code></pre>
+          <pre><code>&lt;link rel="canonical" href="https://isaacteles-cmd-cmd.github.io/seo-lab/post-1.html" /&gt;</code></pre>
 
-        <h2>Monitorando tudo isso no Google Search Console</h2>
+          <h2>Monitorando tudo isso no Google Search Console</h2>
 
-        <p>O GSC tem relatórios específicos para cada etapa desse processo:</p>
+          <p>
+            O GSC tem relatórios específicos para cada etapa desse processo:
+          </p>
 
-        <ul>
-          <li><strong>Cobertura de índice:</strong> mostra quais URLs foram indexadas, quais foram excluídas e por quê</li>
-          <li><strong>Inspeção de URL:</strong> analisa uma URL específica — se foi rastreada, quando, se está no índice</li>
-          <li><strong>Sitemaps:</strong> confirma se seu sitemap foi lido e quantas URLs foram detectadas</li>
-          <li><strong>Relatório de desempenho:</strong> cliques, impressões, CTR e posição média nas buscas</li>
-          <li><strong>Core Web Vitals:</strong> métricas de experiência do usuário (LCP, CLS, INP)</li>
-        </ul>
+          <ul>
+            <li>
+              <strong>Cobertura de índice:</strong> mostra quais URLs foram
+              indexadas, quais foram excluídas e por quê
+            </li>
+            <li>
+              <strong>Inspeção de URL:</strong> analisa uma URL específica — se
+              foi rastreada, quando, se está no índice
+            </li>
+            <li>
+              <strong>Sitemaps:</strong> confirma se seu sitemap foi lido e
+              quantas URLs foram detectadas
+            </li>
+            <li>
+              <strong>Relatório de desempenho:</strong> cliques, impressões, CTR
+              e posição média nas buscas
+            </li>
+            <li>
+              <strong>Core Web Vitals:</strong> métricas de experiência do
+              usuário (LCP, CLS, INP)
+            </li>
+          </ul>
 
-        <h2>Conclusão</h2>
+          <h2>Conclusão</h2>
 
-        <p>A grande vantagem de entender SEO técnico como dev é que você sabe exatamente onde intervir. Problema de indexação? Checar robots.txt, meta robots e canonical. Página lenta? Core Web Vitals no GSC com indicação precisa do problema. Conteúdo não descoberto? Sitemap e link building.</p>
+          <p>
+            A grande vantagem de entender SEO técnico como dev é que você sabe
+            exatamente onde intervir. Problema de indexação? Checar robots.txt,
+            meta robots e canonical. Página lenta? Core Web Vitals no GSC com
+            indicação precisa do problema. Conteúdo não descoberto? Sitemap e
+            link building.
+          </p>
 
-        <p>O Google Search Console é a interface direta entre você e o Google — use os relatórios de forma sistemática e você vai entender o comportamento do seu site de um jeito que a maioria dos profissionais de marketing não consegue.</p>
+          <p>
+            O Google Search Console é a interface direta entre você e o Google —
+            use os relatórios de forma sistemática e você vai entender o
+            comportamento do seu site de um jeito que a maioria dos
+            profissionais de marketing não consegue.
+          </p>
 
-        <div class="read-more">
-          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:1rem;">Continue lendo</p>
-          <a href="post-2.html" class="btn btn-ghost">APIs REST com FastAPI →</a>
-        </div>
-
-      </article>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 DevLog</span>
-      <div class="footer-links">
-        <a href="blog.html">Blog</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="sitemap.xml">Sitemap</a>
+          <div class="read-more">
+            <p
+              style="
+                color: var(--muted);
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+              "
+            >
+              Continue lendo
+            </p>
+            <a href="post-2.html" class="btn btn-ghost"
+              >APIs REST com FastAPI →</a
+            >
+          </div>
+        </article>
       </div>
-    </div>
-  </footer>
+    </main>
 
-</body>
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 DevLog</span>
+        <div class="footer-links">
+          <a href="blog.html">Blog</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

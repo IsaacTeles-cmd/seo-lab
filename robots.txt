@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://IsaacTeles-cmd.github.io/seo-lab/sitemap.xml
+Sitemap: https://isaacteles-cmd-cmd.github.io/seo-lab/sitemap.xml
