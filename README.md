@@ -9,5 +9,8 @@ Tags funcionaram e o GSC começou a indexar as páginas (rápido até) e os rela
 first_view, page_view, scroll, session_start foram detectados e leitura do relatório feita.
 
 DIA 3
-Annálise feita no Screaming Frog, alguns avisos e possíveis erros, porém o site está bem.
+Análise feita no Screaming Frog, alguns avisos e possíveis erros, porém o site está bem.
 Encurtei os títulos para evitar truncamento SERP.
+
+DIA 4 
+Feita a análise no PageSpeed Insights e no Rich Text Results, PageSpeed apresentou Desempenho 87 no mobile e 99 no desktop, irei ajustar o site para aumentar o desempenho mobile.
